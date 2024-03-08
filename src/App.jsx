@@ -6,7 +6,7 @@ function App() {
   const [text, setText] = useState('');
   const [qrCodeData, setQRCodeData] = useState('');
   const [loading, setLoading] = useState(false);
-  const [qrCodeColor, setQRCodeColor] = useState('#FFFFFF');
+  const [qrCodeColor, setQRCodeColor] = useState('#000000');
   const [qrCodeSize, setQRCodeSize] = useState(128); // Default size: 128x128
   const [error, setError] = useState('');
 

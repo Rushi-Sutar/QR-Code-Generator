@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       {/* Hero Section */}
-      <section className="flex items-center justify-center h-screen">
+      <section className="flex items-center justify-center md:h-screen h-[50vh]">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Code Craft</h1>
           <p className="text-lg md:text-xl mb-8 mx-auto md:w-3/4">Generate custom QR codes effortlessly for your business, event, or personal use. Empower your marketing and communication strategies with the simplicity of QR codes.</p>

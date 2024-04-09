@@ -37,9 +37,9 @@ function Home() {
     downloadLink.click();
   };
     return (
-        <div className="flex flex-col min-h-screen bg-gray-900 text-white">
+        <div className="background flex flex-col min-h-screen bg-[#0E132F] text-white">
         <main className="flex flex-col items-center justify-center flex-grow lg:w-1/2 lg:mx-auto">
-          <div className="container mx-auto p-6 bg-gray-800 shadow-md rounded-lg">
+          <div className="container mx-auto p-6 bg-[#171C38] shadow-xl w-full md:w-3/4">
             <label
               htmlFor="textInput"
               className="block text-white font-semibold mb-2"
@@ -52,7 +52,7 @@ function Home() {
               value={text}
               onChange={(e) => setText(e.target.value)}
               placeholder="E.g., Website URL, Text Message, etc."
-              className="border border-gray-600 rounded-md px-4 py-2 mb-4 w-full focus:outline-none focus:ring focus:border-blue-500 bg-gray-700 text-white"
+              className="border border-gray-600 rounded-md px-4 py-2 mb-4 w-full mx-auto focus:outline-none focus:ring focus:border-blue-500 bg-gray-700 text-white"
             />
             <label
               htmlFor="colorPicker"
@@ -65,7 +65,7 @@ function Home() {
               id="colorPicker"
               value={qrCodeColor}
               onChange={(e) => setQRCodeColor(e.target.value)}
-              className="mb-4"
+              className="mb-4 "
             />
             <label
               htmlFor="sizeInput"
@@ -84,7 +84,7 @@ function Home() {
             />
             {error && <p className="text-red-500 mb-4">{error}</p>}
             <button
-              className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded w-full transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-[#5802C6] hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded w-full transition duration-300 ease-in-out transform hover:scale-105"
               onClick={generateQRCode}
               disabled={loading}
             >
